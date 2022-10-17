@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Observer Website</title>
+    <!----Bootstrap link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .card {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<!--navigation bar area-->
+
+<body class="container">
+    <Header class=" mt-4">
+        <div class="nav nav-pills justify-content-between">
+
+            <div class="d-flex justify-content-start">
+                <div class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Daily Observer</a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link" href="#">Website</a>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end">
+                <div class="nav-item">
+                    <a class="nav-link" href="#">Top News</a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link text-muted" href="#Blogs">Blog</a>
+                </div>
+
+                <hr>
+    </Header>
+
+    <!--category display area-->
+    <main>
+        <section>
+            <ul id="category" class="nav nav-bar d-flex justify-content-between mx-4 pe-3">
+
+            </ul>
+        </section>
+
+        <section class="card mt-5 mb-5">
+            <div id="detail-container">
+
+
+            </div>
+        </section>
+
+        <!-- Modal area-->
+        <section>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel"></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="detailOther"></div>
+                        </div>
+                        <div class="modal-body">
+                            <div id="detailsModalData"></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section  class="container" id="Blogs">
+        <h2 class="text-success">Ans to the bonus question</h2>
+        <h3>1. What are the differences among var, let and const?</h3>
+            <p> Variables declared with var are in the function scope. Variables declared as let are in the block scope.
+                Variables declared as const are in the block scope.
+             To reassign a value is to reassign the value of a variable. In var and let reassign is allowed but in
+            const it is not allowed.
+             Hoisting means that you can define a variable before its declaration. In var hoisting is allowed but in
+            let and const it is not allowed.
+        </p>
+        <h3>2. What are the differences between arrow and regular function?</h3>
+        <p> • We can get the same result as regular functions by writing a few lines of code using arrow functions.
+            Curly brackets are not required if only one expression is present.
+            • Arguments object inside the regular functions contains the list of arguments. The arrow function, on the
+            opposite, doesn't define arguments i.e. they do not have arguments binding.
+        </p>
+        <h3>3. Why do we use template strings?</h3>
+        <p> Because string interpolation makes things so much simpler.
+            • only one pair of quotes (back-ticks)
+            • embedded (interpolated) variables and expressions
+            • multiple lines within the quotes (pre-formatted text)
+            • treated like strings so can be assigned or be a return value
+        </p>
+    </section>
+
+    <!--script link-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="js/news.js"></script>
+</body>
+
+</html>
